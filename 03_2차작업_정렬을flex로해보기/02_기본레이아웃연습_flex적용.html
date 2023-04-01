@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./02_기본레이아웃연습_flex적용.css">
+
+</head>
+
+<body>
+
+
+    <!-- 🕵️‍♂️ class 이름 짓는 방식을 고민했음. : 카카오 뱅크 스타일로 해보자-->
+    <nav class="nav-global">
+        <!-- 모든 item container -->
+        <ul class="nav-items">
+            <!-- 로고 -->
+            <li class="nav-logo"> 
+                <a href="/" > 
+                    <img src="/img/gloves.png" class="logo-img"> 
+                </a>
+            </li>
+            <!-- 메뉴 항목들 -->
+            <li class="nav-item">
+                <p class="nav-title"> Home</p>    
+            </li>
+
+            <li class="nav-item">
+                <p class="nav-title">About</p>    
+            </li>
+
+            <li class="nav-item">
+                <p class="nav-title">Education</p>    
+            </li>
+
+            <li class="nav-item">
+                <p class="nav-title">Projects</p>    
+            </li>
+            <li class="nav-item" id="nav-item-margin">
+                <p class="nav-title">Contact</p>
+            </li>
+        </ul>
+
+    </nav>
+    
+
+
+    <main>
+
+        <!-- 처음 이미지 섹션 -->
+        <section class="top-section"> 
+
+            <!-- 이미지 -->
+            <div class="top-img-container"> 
+                <img src="/img/new_main.png" alt="" class="top-img-content">
+            </div>
+
+            <!-- 제목 -->
+            <div class="top-title-container"> 
+                <div class="top-title-wrapper"> 
+                    <h1 class="h1-tag"> 개발의 모든 것. 
+                                        DJdev </h1> 
+                    
+                </div>
+            </div>
+
+
+
+
+
+        </section>
+
+
+        <!-- 자기 소개 섹션 -->
+        <section class="about-me-section"> 
+            
+            <div class="me-container">
+
+                <!-- 사진 영역 -->
+                <div class="me-photo-container">
+                    
+                </div>
+
+                <!-- 설명 영역 -->
+                <div class="me-desc-container">
+
+                    <h1> About me</h1>
+
+                    <div class="list-wrap">
+                        <ul class="list-ul-tag">
+
+                            <!-- 이름 -->
+                            <li class="list-li-tag"> 
+                                <p class="toc">Name: </p>
+                                <p class="toc-content">정덕진</p>
+                            </li>    
+                            
+                            <li class="list-li-tag"> 
+                                <p class="toc">Blog: </p>
+                                <p class="toc-content">https://hello-5200.tistory.com</p>
+                            </li>    
+                            
+                            <li class="list-li-tag"> 
+                                <p class="toc">E-mail: </p>
+                                <p class="toc-content">music_oh@naver.com</p>
+                            </li>    
+                            
+                            <li class="list-li-tag"> 
+                                <p class="toc">Phone: </p>
+                                <p class="toc-content"> </p>
+                            </li>    
+                            
+                            
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        
+    </main>
+
+
+
+
+    
+</body>
+
+<script src="./02_기본레이아웃연습_flex적용.js"></script>
+
+</html>

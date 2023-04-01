@@ -1,0 +1,270 @@
+@font-face {
+    font-family: maplestory_blod;
+    src: url(../font/Maplestory\ Bold.ttf);
+}
+
+
+
+body {
+    font-family: "maplestory_blod";
+
+    background-color: lightsteelblue;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+/* ------- navbar START -------------- */
+
+.nav-global{
+
+    background-color: rgba(229,246,253,1);
+
+    /*🕵️‍♂️ 고민 : 단위를 잡을 때, px? vh? 100%?
+        2) 장재원님은 
+                width : 1110px
+        3) 교수님은
+                width: 100%;
+                height: 80px
+        4) 토스 
+                width 100% 
+                heigh  50px
+        */
+    height: 82px;
+        /* 카뱅과 동일하게 설정 */
+    width: 100%;
+        /* 부모의 너비와 같게 설정 */
+    
+    display: block;
+
+    /* 폰트 주기 */
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 스크롤바 내려갈 때도 내려가기  */
+    position: fixed;
+
+}
+
+
+
+.nav-global .nav-items {
+
+    /* background-color: lightgreen; */
+
+    /* 모든 item 감싸는 영역의 크기 잡기*/
+    height: 100%;
+    width: 1080px; 
+        /* 카뱅에서 1080px 로 잡음 따라가자 */
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+
+    /* flex-grow: 1; */
+
+
+    /* text-align: right; */
+
+    /* 앞에 점 없애는거 */
+    list-style: none;
+
+}
+
+
+
+.nav-items .nav-logo{
+    /* width: 50px; */
+    /* height: 50px; */
+    /* background-color: aquamarine; */
+
+    /* ⭐⭐⭐⭐⭐ 로고와 오른쪽 메뉴들 배치할 때, 
+        1) 로고 기준으로는 margin-right
+        2) 목차 기준으로는 margin-left  */
+    margin-right: 500px;
+    
+    position: relative;
+    left: -13px;
+
+}
+
+.nav-items .nav-logo .logo-img {
+    /* background-color: green; */
+    /* opacity: 0; */
+
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/gloves.png);
+    background-size: 50px 50px;
+    /* display: inline-block; */
+    /* float: left; */
+
+}
+
+
+.nav-global .nav-items .nav-item {
+    /* 나는 글자만! 정렬되고 싶었음. 이 크기대로 정렬되니까, 뒤에 배경을 지웠음 ⭐⭐⭐  */
+        /* width: 90px; */
+        /* height: 80px; */
+        /* background-color: blue; */
+    
+    /* ⭐⭐⭐⭐⭐⭐ 글자들 가운데 정렬 flex 대체 하는 거 */
+    
+        /* 좌우 */
+        text-align: center;
+        /* 상하 */
+        line-height: 45px;
+
+}
+
+#nav-item-margin {
+    margin-right: 20px;
+}
+
+/* ------- navbar END -------------- */
+
+
+.top-section {
+    position: relative;
+}
+
+.top-section .top-img-container {
+
+    /* 내부의 텍스트, 이미지 또는 다른 요소의 크기에 따라 자동으로 너비가 조정 */
+    width: auto;
+    height: 100vh;
+
+    position: relative;
+}
+
+.top-section .top-img-container .top-img-content {
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0px;
+
+    /* position 속성을 주면 -> z 인덱스가 변하는건가?  */
+    z-index: -2;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.top-section .top-title-container {
+
+    /* background-color: lightgreen; */
+
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.top-section .top-title-container .top-title-wrapper {  
+
+    background-color: lightpink;
+
+    margin-top: 170px;
+}
+
+
+
+.top-title-container .top-title-wrapper .h1-tag {
+
+    /* width: 100%; */
+    text-align: center;
+    /* margin-bottom: 50px; */
+    font-size: 76px;
+    /* font-weight: 100; */
+    /* line-height: 1.4; */
+    color: rgb(0, 0, 0);
+
+    /* 태그에서 줄 바꿈을 렌더링 하고 싶으면, white-space 속성을 쓰면 된다. */
+    white-space: pre-line;
+
+}
+
+/* ------- About Me section START ----------------------------- */
+
+.about-me-section .me-container{
+    background-color: lightgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.about-me-section .me-container .me-photo-container {
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+
+    border-radius: 12%;
+
+    background-image: url(/img/analog-style-2d-illustration-adorable-cute-monkey-king-with-wearing-a-crown-and-royal-regalia-468426269.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+}
+
+.about-me-section .me-container .me-desc-container {
+
+    width: 600px;
+    height: 410px;
+    background-color: lightsalmon;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.list-wrap .list-ul-tag .list-li-tag {
+    
+    display: flex;
+
+    background-color: blue;
+}
+
+
+.list-ul-tag .list-li-tag .toc {
+    width: 130px;
+    height: 30px;
+    background-color: green;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.list-ul-tag .list-li-tag .toc-content {
+    width: 380px;
+    height: 30px;
+    background-color: yellow;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
