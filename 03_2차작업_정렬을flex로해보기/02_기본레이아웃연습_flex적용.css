@@ -210,19 +210,24 @@ body {
     
     width: auto;
     height: 700px;
+
+
 }
 
 
-.about-me-section .me-container .me-photo-container {
-    width: 300px;
-    height: 300px;
+.me-container .me-photo-container .me-img-tag {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    
     /* background-color: blue; */
 
-    border-radius: 12%;
+    /* border-radius: 22%; */
 
-    background-image: url(/img/pltn-style-a-purple-laptop-with-a-rocket-coming-out-of-it-a-3d-render-trending-on-artstation-dig-861508195.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    /* background-color: rebeccapurple; */
+
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
     
     
 }
@@ -230,6 +235,7 @@ body {
 .about-me-section .me-container .me-desc-container {
 
     width: 800px;
+
 
     /* background-color: lightcyan; */
 

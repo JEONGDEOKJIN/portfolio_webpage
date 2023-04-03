@@ -1,0 +1,908 @@
+@font-face {
+    font-family: maplestory_blod;
+    src: url(../font/Maplestory\ Bold.ttf);
+}
+
+
+
+body {
+    font-family: "maplestory_blod";
+
+    /* background-color: lightsteelblue; */
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+/* ------- navbar START -------------- */
+
+.nav-global{
+
+    background-color: rgba(245, 245, 245, 0.8);
+
+    /*🕵️‍♂️ 고민 : 단위를 잡을 때, px? vh? 100%?
+        2) 장재원님은 
+                width : 1110px
+        3) 교수님은
+                width: 100%;
+                height: 80px
+        4) 토스 
+                width 100% 
+                heigh  50px
+        */
+    height: 82px;
+        /* 카뱅과 동일하게 설정 */
+    width: 100%;
+        /* 부모의 너비와 같게 설정 */
+    
+    display: block;
+
+    /* 폰트 주기 */
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 스크롤바 내려갈 때도 내려가기  */
+    position: fixed;
+
+    z-index: 1;
+
+}
+
+
+
+.nav-global .nav-items {
+
+    /* background-color: lightgreen; */
+
+    /* 모든 item 감싸는 영역의 크기 잡기*/
+    height: 100%;
+    width: 1080px; 
+        /* 카뱅에서 1080px 로 잡음 따라가자 */
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+
+    /* flex-grow: 1; */
+
+
+    /* text-align: right; */
+
+    /* 앞에 점 없애는거 */
+    list-style: none;
+
+
+}
+
+
+
+.nav-items .nav-logo{
+    /* width: 50px; */
+    /* height: 50px; */
+    /* background-color: aquamarine; */
+
+    /* ⭐⭐⭐⭐⭐ 로고와 오른쪽 메뉴들 배치할 때, 
+        1) 로고 기준으로는 margin-right
+        2) 목차 기준으로는 margin-left  */
+    margin-right: 500px;
+    
+    position: relative;
+    left: -13px;
+
+}
+
+.nav-items .nav-logo .logo-img {
+    /* background-color: green; */
+    /* opacity: 0; */
+
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/gloves.png);
+    background-size: 50px 50px;
+    /* display: inline-block; */
+    /* float: left; */
+
+}
+
+
+.nav-global .nav-items .nav-item {
+    /* 나는 글자만! 정렬되고 싶었음. 이 크기대로 정렬되니까, 뒤에 배경을 지웠음 ⭐⭐⭐  */
+        /* width: 90px; */
+        /* height: 80px; */
+        /* background-color: blue; */
+    
+    /* ⭐⭐⭐⭐⭐⭐ 글자들 가운데 정렬 flex 대체 하는 거 */
+    
+        /* 좌우 */
+        text-align: center;
+        /* 상하 */
+        line-height: 45px;
+
+}
+
+#nav-item-margin {
+    margin-right: 20px;
+}
+
+/* ------- navbar END -------------- */
+
+
+.top-section {
+    position: relative;
+}
+
+.top-section .top-img-container {
+
+    /* 내부의 텍스트, 이미지 또는 다른 요소의 크기에 따라 자동으로 너비가 조정 */
+    width: auto;
+    height: 100vh;
+
+    position: relative;
+}
+
+.top-section .top-img-container .top-img-content {
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0px;
+
+    /* position 속성을 주면 -> z 인덱스가 변하는건가?  */
+    z-index: -2;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.top-section .top-title-container {
+
+    /* background-color: lightgreen; */
+
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.top-section .top-title-container .top-title-wrapper {  
+
+    /* background-color: lightpink; */
+
+    margin-top: 170px;
+}
+
+
+
+.top-title-container .top-title-wrapper .h1-tag {
+
+    /* width: 100%; */
+    text-align: center;
+    /* margin-bottom: 50px; */
+    font-size: 76px;
+    /* font-weight: 100; */
+    /* line-height: 1.4; */
+    color: rgb(0, 0, 0);
+
+    /* 태그에서 줄 바꿈을 렌더링 하고 싶으면, white-space 속성을 쓰면 된다. */
+    white-space: pre-line;
+
+}
+
+/* ------- About Me section START ----------------------------- */
+.about-me-section {
+    /* 토스 배경색 */
+    background-color: #191f28;
+    
+
+    /* 위 아래 패딩 ⭐⭐⭐⭐⭐ 주의  */
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    /* 캐릭터에 맞춘 색 */
+    /* 캐릭터가 잘려서 안 이쁨 */
+    /* background-color: #ffd842; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -2;
+
+
+}
+.about-me-section .me-container{
+    /* background-color: blue; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 1500px;
+    height: 500px;
+
+    
+}
+
+.about-me-section .me-container .me-desc-container {
+    /* background-color: gray; */
+
+    width: 300px;
+
+    position: relative;
+    left: 50px;
+}
+
+
+
+.me-container .me-desc-container .title-h1-tag {
+    width: 100%;
+    height: 100%;
+    
+    text-align: left;
+
+    font-size: 56px;
+    font-weight: bold;
+
+    line-height: 1.3;
+
+    margin: 0;
+    padding: 0;
+
+    /* sub copy 랑 떨어트리기 */
+    margin-bottom: 20px;
+}
+
+
+.me-container .me-desc-container .subdesc-p-tag {
+    width: 100%;
+    height: 100%;
+
+    text-align: left;
+
+    /* font-size: 20px; > 토스 레퍼런스 사이즈 */
+    font-size: 25px;
+    font-weight: bold;
+    
+    line-height: 1.6;
+
+    margin: 0;
+    padding: 0;
+
+    /* icon 이랑 떨어트리기 */
+    margin-bottom: 30px;
+}
+
+
+
+
+.about-me-section .me-container .me-photo-container {
+    width: 410px;
+    height: auto;
+    /* background-color: lime; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    right: 40px;
+}
+
+.me-container .me-photo-container .me-img-tag {
+    width: 400px;
+    height: 300px;
+
+
+    border-radius: 12px;
+    z-index: 0;
+
+}
+
+
+.about-me-section .me-container .me-desc-container {
+
+    width: 800px;
+
+    /* background-color: lightcyan; */
+
+    color: whitesmoke;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+
+.me-desc-container .desc-title {
+    font-size: 32px;
+    font-weight: bold;
+    /* background-color: yellowgreen; */
+}
+
+
+.me-desc-container .list-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+
+.list-wrap .list-ul-tag {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */    
+}
+
+
+.list-wrap .list-ul-tag .list-li-tag {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.list-ul-tag .list-li-tag .toc {
+
+    width: 130px;
+    /* background-color: green; */
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+
+
+.list-ul-tag .list-li-tag .toc-content {
+    /* background-color: yellow;/ */
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 28px;
+    font-weight: normal;
+
+}
+
+
+.me-buttons-container {
+    width: 100%;
+
+    /* background-color: green; */
+    display: flex;
+    align-items: flex-start;
+
+}
+
+
+
+
+.me-buttons-container .button-design {
+    width: auto;
+    height: auto;
+    
+    border: 0 solid;
+
+    border-radius: 5px;
+
+    padding: 12px;
+
+    font-family: "maplestory_blod";
+    font-size: large;
+
+    cursor: pointer;
+
+    margin-right: 10px;
+
+    background-color: rgba(245, 245, 245, 0.795);
+    
+}
+/* ------- About Me section END ----------------------------- */
+
+
+
+/* -------- Education Section START  --------------  */
+
+.education-section {
+
+    height: 800px;
+    width: 100%;
+
+}
+
+
+
+/* ----------- tech-stack-section START ------------- */
+
+.tech-stack-section {
+
+    height: 100%;
+    width: 100%;
+    /* background-color: #191f28; */
+    background-color: whitesmoke;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* ⭐⭐⭐⭐⭐ 밑 영역과 구분 */
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+
+.tech-stack-section .stack-p-tag {
+
+    /* background-color: gray; */
+
+
+    font-size: 56px;
+    font-weight: bold;
+    color: var(--grey900);
+    line-height: 1.3;
+
+    /* display: block; */
+    text-align: center;
+
+    /* marigin 주의⭐⭐⭐ */
+    margin-bottom: 100px;
+
+}
+
+
+.tech-stack-section .logo-container {
+
+    display: flex;
+    justify-content: center;
+    /* background-color: greenyellow; */
+
+
+    /* marigin 주의⭐⭐⭐ */
+    margin-bottom: 100px;
+
+}
+
+.tech-stack-section .logo-container div {
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    /* background-color:  greenyellow; */
+
+    margin-right: 20px;
+    
+    /* 이미지 넣기 */
+    background-image: url(https://static.toss.im/png-icons/securities/icn-sec-fill-034730.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* z-index: 1; */
+}
+
+
+.tech-stack-section .logo-container > div:nth-child(2) {
+      /* 이미지 넣기 */
+      background-image: url(https://static.toss.im/png-icons/timeline/kcar-fill.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.tech-stack-section .logo-container > div:nth-child(3) {
+      /* 이미지 넣기 */
+      background-image: url(https://static.toss.im/png-icons/securities/icn-sec-fill-012030.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+
+
+.tech-stack-section .desc-container {
+
+    width: 1200px;
+    height: 100%;
+
+    /* background-color: green; */
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+
+}
+
+
+.desc-container .desc-item-wrap {
+
+    width: 500px;
+    height: 200px;
+    /* background-color: blue; */
+
+}
+
+.desc-container .desc-item-wrap .desc-title{
+
+    font-size: 35px;
+    color: #191f28;
+
+    letter-spacing: 0px;
+    line-height: 1.5;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.desc-container .desc-item-wrap .desc-detail{
+    font-size: 20px;
+    color: #6b7684;
+    
+    /* ⭐⭐⭐ 자간 ⭐⭐⭐  */
+    letter-spacing: 0px;
+    /* ⭐⭐⭐ 글자 간 간격 ⭐⭐⭐ */
+    line-height: 1.5;
+    
+    margin: 0;
+}
+
+
+
+
+/* ----------- project-section START ------------- */
+
+.project_section {
+
+    height: 1000px;
+    width: 100%;
+    /* background-color: gray; */
+    margin: 0;
+    padding: 0;
+
+    
+
+    /* background-color: lightblue; */
+
+    /* background-color: red; */
+
+
+    /* background-image: repeat; */
+    /* background-image: url(https://lottesweetmall.com/morenvyimg/character_pepero_bg_2580.jpg); */
+    /* background-color: rgba(0, 0, 0, 0.2);     */
+
+    /* z-index: -2; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.project_section .prject_desc_container {
+    width: auto;
+    height: auto;
+    /* background-color: blue; */
+
+    /* 마진 주의 📛📛📛 */
+    margin-bottom: 10px;
+}
+
+
+
+.project_section .prject_desc_container .prject_title {
+    font-size: 56px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+
+    /* ⭐⭐⭐⭐⭐ 마진 주의 */
+    margin-bottom: 15px;
+
+    /* padding: 23px 0 50px;/ */
+    /* margin: 0 */
+
+}
+
+.desc_bottom_container .bottom_left .title_li_tag {
+    /* background-color: rebeccapurple; */
+    
+    /* width: 800px; */
+    /* height: 100px; */
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+
+.slide_area .desc_bottom_container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: red;
+
+    width: 950px;
+    height: 300px;
+
+}
+
+.bottom_left .title_li_tag .prject_sub_toc {
+    width: 120px;
+
+    font-size: 25px;
+    font-weight: 600;
+    color: #292929e1;
+    text-align: left;
+
+    /* background-color: pink; */
+    margin: 0;
+    padding: 0;
+    
+    /* 📛📛📛 마진 주의 */
+    margin-bottom: 10px;
+
+
+
+}
+.bottom_left .title_li_tag .prject_sub_desc {
+    width: 550px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #292929e1;
+    /* text-align: left; */
+    /* background-color: plum; */
+
+    float: right;
+
+    margin: 0;
+    padding: 0;
+
+
+    /* ⭐⭐⭐⭐⭐ 마진 주의 */
+    /* margin-bottom: 15px; */
+
+}
+
+
+.bottom_right .title_li_tag .prject_sub_toc {
+    width: 120px;
+
+    font-size: 25px;
+    font-weight: 600;
+    color: #292929e1;
+    text-align: left;
+
+    /* background-color: pink; */
+    margin: 0;
+    padding: 0;
+    
+    /* 📛📛📛 마진 주의 */
+    margin-bottom: 10px;
+
+
+
+}
+.bottom_right .title_li_tag .prject_sub_desc {
+    width: 550px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #292929e1;
+    /* text-align: left; */
+    /* background-color: plum; */
+
+    float: right;
+
+    margin: 0;
+    padding: 0;
+
+
+    /* ⭐⭐⭐⭐⭐ 마진 주의 */
+    /* margin-bottom: 15px; */
+
+}
+
+/* ----------------------- project slide ----------------------  */
+
+
+.project_section .slide_area {
+
+    width: 1200px;
+    /* height: auto; */
+
+    /* background-color: aqua; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    
+
+}
+
+
+
+.project_section .slide_area .slide_tab_box {
+
+}
+
+.slide_tab_box .slide_tab_container {
+
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+.slide_tab_box .slide_tab_container .slide_tab_wrapper {
+
+    width: 156px;
+
+    /* 슬라이드를 해야 해서 사이즈를 고정한건가? */
+    height: 520px;
+
+    /* background-color: yellow; */
+/* 
+    ⭐⭐⭐ 마진 주의
+    margin-right: 100px; */
+}
+
+
+
+.slide_tab_box .slide_tab_container .slide_arrow_up, 
+.slide_tab_box .slide_tab_container .slide_arrow_down {
+
+    width: 50px;
+    height: 50px;
+    /* background-color: crimson; */
+
+    cursor: pointer;
+
+    background-image: url("https://lottesweetmall.com/morenvyimg/icon_arrow_up.png");
+
+}
+
+
+.slide_tab_box .slide_tab_container .slide_arrow_up {
+    position: absolute;
+
+    top: -20px;
+}
+
+.slide_tab_box .slide_tab_container .slide_arrow_down {
+
+    position: absolute;
+
+    bottom: -20px;
+
+    transform: rotate(180deg);
+}
+
+.slide_tab_container .slide_tab_wrapper .slide_tab_item {
+
+    height: 153px;
+    width: 153px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.slide_tab_wrapper .slide_tab_item .slide_a_tag {
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background-color: red;
+
+
+}
+
+
+.slide_area .slide_img_box .slide_img_container {
+    width: 998px;
+}
+
+.slide_img_container .slide_img_wrapper {
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    position: relative;
+
+}
+
+
+.slide_img_wrapper .slide_arrow_left,
+.slide_img_wrapper .slide_arrow_right {
+
+    width: 50px;
+    height: 50px;
+    /* background-color: crimson; */
+
+    cursor: pointer;
+
+    background-image: url("https://lottesweetmall.com/morenvyimg/icon_arrow_up.png")
+
+}
+
+
+
+.slide_img_wrapper .slide_arrow_left {
+
+    position: absolute;
+    left: -20px;
+    transform: rotate(-90deg);
+}
+
+.slide_img_wrapper .slide_arrow_right {
+    position: absolute;
+    right: -20px;
+    transform: rotate(90deg);
+}
+
+
+.slide_img_container .slide_img_wrapper .slide_img_item {
+    width: 998px;
+    height: 578px;
+
+    background-image: url(/img/toy_project_maple_story.JPG.jpg);
+    
+    border-radius: 60px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
+
