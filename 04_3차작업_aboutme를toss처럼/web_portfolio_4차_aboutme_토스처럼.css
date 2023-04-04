@@ -500,7 +500,7 @@ body {
     margin-right: 20px;
     
     /* 이미지 넣기 */
-    background-image: url(https://static.toss.im/png-icons/securities/icn-sec-fill-034730.png);
+    background-image: url(/img/react.svg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -510,18 +510,38 @@ body {
 
 .tech-stack-section .logo-container > div:nth-child(2) {
       /* 이미지 넣기 */
-      background-image: url(https://static.toss.im/png-icons/timeline/kcar-fill.png);
+      background-image: url(/img/nodejs.svg);
       background-repeat: no-repeat;
       background-size: cover;
 }
 
 .tech-stack-section .logo-container > div:nth-child(3) {
       /* 이미지 넣기 */
-      background-image: url(https://static.toss.im/png-icons/securities/icn-sec-fill-012030.png);
+      background-image: url(/img/python.svg);
       background-repeat: no-repeat;
       background-size: cover;
 }
 
+.tech-stack-section .logo-container > div:nth-child(4) {
+      /* 이미지 넣기 */
+      background-image: url(/img/solidity.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.tech-stack-section .logo-container > div:nth-child(5) {
+      /* 이미지 넣기 */
+      background-image: url(/img/typescript.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.tech-stack-section .logo-container > div:nth-child(6) {
+      /* 이미지 넣기 */
+      background-image: url(/img/unrealengine.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
 
 
 .tech-stack-section .desc-container {
@@ -542,9 +562,10 @@ body {
 
 .desc-container .desc-item-wrap {
 
-    width: 500px;
+    width: 600px;
     height: 200px;
     /* background-color: blue; */
+    
 
 }
 
@@ -635,108 +656,120 @@ body {
 
 }
 
-.desc_bottom_container .bottom_left .title_li_tag {
-    /* background-color: rebeccapurple; */
-    
-    /* width: 800px; */
-    /* height: 100px; */
 
+.slide_area .slide_img_box {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    
-}
-
-
-.slide_area .desc_bottom_container {
-
-    display: flex;
+    /* justify-content: center; */
     align-items: center;
-    justify-content: center;
-
-    background-color: red;
-
-    width: 950px;
-    height: 300px;
+    flex-direction: column;
 
 }
 
-.bottom_left .title_li_tag .prject_sub_toc {
-    width: 120px;
 
-    font-size: 25px;
-    font-weight: 600;
-    color: #292929e1;
-    text-align: left;
+.slide_img_box .desc_tab_container {
+    border: 0 solid;
+    Font-size: 16px;
+    Font-weight: 400;
+    line-height: 1.75;
 
-    /* background-color: pink; */
-    margin: 0;
-    padding: 0;
-    
     /* 📛📛📛 마진 주의 */
+    margin-top: 30px;
+}
+
+
+/* 밑줄 긋기 */
+.slide_img_box .desc_tab_container .nav-tabs {
+    /* border-bottom: 1px solid #d6d7da; */
+
+}
+
+
+
+/* 라디오 버튼 없애기 */
+.desc_tab_container .nav-tabs > input {
+    display: none;
+}
+
+/* 탭 버튼 누르는 영역 꾸미기 */
+.desc_tab_container .nav-tabs > input + label {
+    /* ❓❓❓ inline block 기능은? */
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    /* background-color: transparent; */
+
+    /* 패딩 주의 📛📛📛📛📛 */
+    padding: 10px;
+
+}
+
+
+/* 체크 되었을 때 스타일 주기 : 체크 속성이 있는 input 태그에 label 스타일 */
+.nav-tabs > input:checked + label {
+    background: bisque;
+    color: black;
+
+}
+
+
+/* 초기에 사라지게 보여야 하는 부분 ⭐⭐ */
+.desc_tab_container .box {
+    /* ⭐⭐⭐ */
+    display: none;
+
+    margin-top: 10px;
+
+    width: 900px;
+    height: auto;
+    border-bottom: 2px solid black;
+    /* background-color: rgb(211, 189, 162); */
+}
+
+/* ⭐⭐⭐ input 태그 중 tab01 클래스를 가진게 클릭되면 > nav-item1 에 대해서 이렇게 꾸미겠다 ⭐⭐⭐⭐⭐ */
+input[class="tab01"]:checked ~ .nav-item1 {
+    display: block;
+    color: black;
+}
+
+input[class="tab02"]:checked ~ .nav-item2 {
+    display: block;
+    color: black;
+}
+
+input[class="tab03"]:checked ~ .nav-item3 {
+    display: block;
+    color: black;
+}
+
+
+
+.summary-content .summary-content-title {
+    margin-top: 10px;
     margin-bottom: 10px;
-
-
-
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.75;
 }
-.bottom_left .title_li_tag .prject_sub_desc {
-    width: 550px;
-    font-size: 25px;
-    font-weight: 300;
-    color: #292929e1;
-    /* text-align: left; */
-    /* background-color: plum; */
 
-    float: right;
-
-    margin: 0;
-    padding: 0;
-
-
-    /* ⭐⭐⭐⭐⭐ 마진 주의 */
-    /* margin-bottom: 15px; */
-
+.summary-content .summary-content-desc{
+    Font-size: 18px;
+    Font-weight: 200;
+    line-height: 1.75;
 }
 
 
-.bottom_right .title_li_tag .prject_sub_toc {
-    width: 120px;
-
-    font-size: 25px;
-    font-weight: 600;
-    color: #292929e1;
-    text-align: left;
-
-    /* background-color: pink; */
-    margin: 0;
-    padding: 0;
-    
-    /* 📛📛📛 마진 주의 */
-    margin-bottom: 10px;
 
 
-
-}
-.bottom_right .title_li_tag .prject_sub_desc {
-    width: 550px;
-    font-size: 25px;
-    font-weight: 300;
-    color: #292929e1;
-    /* text-align: left; */
-    /* background-color: plum; */
-
-    float: right;
-
-    margin: 0;
-    padding: 0;
-
-
-    /* ⭐⭐⭐⭐⭐ 마진 주의 */
-    /* margin-bottom: 15px; */
-
-}
 
 /* ----------------------- project slide ----------------------  */
+
+.project_section {
+
+    /* 📛📛📛 마진 주의 */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 
 
 .project_section .slide_area {
@@ -747,8 +780,9 @@ body {
     /* background-color: aqua; */
 
     display: flex;
+    
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 
     position: relative;
     
@@ -758,6 +792,16 @@ body {
 
 
 .project_section .slide_area .slide_tab_box {
+
+    /* box-sizing: border-box; */
+    border: 0 solid;
+    Font-size: 16px;
+    Font-weight: 400;
+    line-height: 1.75;
+    /* letter-spacing: -.02em; */
+
+    /* 패딩 주의📛📛📛 */
+    padding-top: 30px;
 
 }
 
