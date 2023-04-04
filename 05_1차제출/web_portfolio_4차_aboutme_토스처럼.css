@@ -6,23 +6,13 @@
 
 
 body {
-    /* 글씨체 */
     font-family: "maplestory_blod";
 
     /* background-color: lightsteelblue; */
 
-    /* 기본값 제거 */
     margin: 0;
     padding: 0;
-}
 
-
-
-/* a 태그 걸었을 때, 색상 제거 */
-a {
-    text-align: center;
-    text-decoration: none; /* 링크의 밑줄 제거 */
-    color: inherit; /* 링크의 색상 제거 */
 }
 
 
@@ -134,8 +124,6 @@ a {
         /* 상하 */
         line-height: 45px;
 
-        /* 포인트 */
-        cursor: pointer;
 }
 
 #nav-item-margin {
@@ -959,11 +947,6 @@ input[class="tab03"]:checked ~ .nav-item3 {
 
 
 
-/* -------- contact me Section START  --------------  */
 
-.contact_me_section {
 
-    height: 800px;
-    width: 100%;
 
-}
